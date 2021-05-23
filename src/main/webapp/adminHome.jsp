@@ -1,11 +1,11 @@
 <%@include file="header.html"%>
 <!DOCTYPE html>
 <html>
-<title>DGI</title>
+<title>Result Management System</title>
 <body>
 <img src="logo.png"  align="left"width="100" height="100">
-<center><img src="dgi.png" width="100" height="100">
-<img src="apj sir.png" align="right"  width="100" height="100"></center>
+<center><img src="unilogo.png" width="100" height="100">
+<img src="lq.png" align="right"  width="100" height="100"></center>
 <div class="w3-container">
   <div class="w3-bar w3-black">
     <button class="w3-bar-item w3-button tablink w3-red" onclick="openCity(event,'London')">Add New Student</button>
@@ -48,46 +48,46 @@
                     <div class="card">
                         <div class="card-header">Add New Students</div>
                         <div class="card-body">
-                            <form name="my-form" onsubmit="return validform()" action="success1.jsp" method="post">
+                            <form name="my-form" onsubmit="return validform()" action="addNewStudent.jsp" method="post">
                                 <div class="form-group row">
-                                    <label for="full_name" class="col-md-4 col-form-label text-md-right">Course Name</label>
+                                    <label for="full_name" class="col-md-4 col-form-label text-md-right">Faculty Name</label>
                                     <div class="col-md-6">
-                                        <input type="text"  class="form-control" name="">
+                                        <input type="text"  class="form-control" name="faculty">
                                     </div>
                                 </div>
 
                                 <div class="form-group row">
-                                    <label for="email_address" class="col-md-4 col-form-label text-md-right">Branch Name</label>
+                                    <label for="email_address" class="col-md-4 col-form-label text-md-right">Degree program</label>
                                     <div class="col-md-6">
-                                        <input type="text"  class="form-control" name="">
+                                        <input type="text"  class="form-control" name="degree">
                                     </div>
                                 </div>
 
                                 <div class="form-group row">
-                                    <label for="user_name" class="col-md-4 col-form-label text-md-right">Roll Number</label>
+                                    <label for="user_name" class="col-md-4 col-form-label text-md-right">Reg. Number</label>
                                     <div class="col-md-6">
-                                        <input type="text" class="form-control" name="">
+                                        <input type="text" class="form-control" name="RegNo">
                                     </div>
                                 </div>
 
                                 <div class="form-group row">
                                     <label for="phone_number" class="col-md-4 col-form-label text-md-right">Name</label>
                                     <div class="col-md-6">
-                                        <input type="text"  class="form-control" name="">
+                                        <input type="text"  class="form-control" name="name">
                                     </div>
                                 </div>
 
                                 <div class="form-group row">
-                                    <label for="present_address" class="col-md-4 col-form-label text-md-right">Father Name</label>
+                                    <label for="present_address" class="col-md-4 col-form-label text-md-right">NIC Number</label>
                                     <div class="col-md-6">
-                                        <input type="text"  class="form-control" name="">
+                                        <input type="text"  class="form-control" name="NICno">
                                     </div>
                                 </div>
 
                                 <div class="form-group row">
                                     <label for="permanent_address" class="col-md-4 col-form-label text-md-right">Gender</label>
                                     <div class="col-md-6">
-                                        <input type="text" class="form-control" name="">
+                                        <input type="text" class="form-control" name="gender">
                                     </div>
                                 </div>
 
@@ -148,60 +148,60 @@
                     <div class="card">
                         <div class="card-header">Insert New Result</div>
                         <div class="card-body">
-                            <form name="my-form" onsubmit="return validform()" action="success.php" method="">
+                            <form name="my-form" onsubmit="return validform()" action="insertNewResult.jsp" method="">
                                 <div class="form-group row">
-                                    <label for="full_name" class="col-md-4 col-form-label text-md-right">Roll Number</label>
+                                    <label for="full_name" class="col-md-4 col-form-label text-md-right">Index Number</label>
                                     <div class="col-md-6">
-                                        <input type="text"class="form-control" name="">
+                                        <input type="text"class="form-control" name="IndexNo">
                                     </div>
                                 </div>
 
                                 <div class="form-group row">
-                                    <label for="email_address" class="col-md-4 col-form-label text-md-right">Engg. Physics-I</label>
+                                    <label for="email_address" class="col-md-4 col-form-label text-md-right">Semester</label>
                                     <div class="col-md-6">
-                                        <input type="text"  class="form-control" name="">
+                                        <input type="text"  class="form-control" name="semester">
                                     </div>
                                 </div>
 
                                 <div class="form-group row">
-                                    <label for="user_name" class="col-md-4 col-form-label text-md-right">Engg. Chemistry</label>
+                                    <label for="user_name" class="col-md-4 col-form-label text-md-right">Subject code-01</label>
                                     <div class="col-md-6">
-                                        <input type="text"  class="form-control" name="">
+                                        <input type="text"  class="form-control" name="s1">
                                     </div>
                                 </div>
 
                                 <div class="form-group row">
-                                    <label for="phone_number" class="col-md-4 col-form-label text-md-right">Engg. Mathematics-I</label>
+                                    <label for="phone_number" class="col-md-4 col-form-label text-md-right">Subject code-02</label>
                                     <div class="col-md-6">
-                                        <input type="text"  class="form-control" name="">
+                                        <input type="text"  class="form-control" name="s2">
                                     </div>
                                 </div>
 
                                 <div class="form-group row">
-                                    <label for="present_address" class="col-md-4 col-form-label text-md-right">Basic Electrical Engg</label>
+                                    <label for="present_address" class="col-md-4 col-form-label text-md-right">Subject code-03</label>
                                     <div class="col-md-6">
-                                        <input type="text"  class="form-control" name="">
+                                        <input type="text"  class="form-control" name="s3">
                                     </div>
                                 </div>
 
                                 <div class="form-group row">
-                                    <label for="permanent_address" class="col-md-4 col-form-label text-md-right">Electronic Engg.</label>
+                                    <label for="permanent_address" class="col-md-4 col-form-label text-md-right">Subject code-04</label>
                                     <div class="col-md-6">
-                                        <input type="text"  class="form-control" name="">
+                                        <input type="text"  class="form-control" name="s4">
                                     </div>
                                 </div>
                                 
                                  <div class="form-group row">
-                                    <label for="permanent_address" class="col-md-4 col-form-label text-md-right">Engg. Chemistry Lab</label>
+                                    <label for="permanent_address" class="col-md-4 col-form-label text-md-right">Subject code-05</label>
                                     <div class="col-md-6">
-                                        <input type="text"  class="form-control" name="">
+                                        <input type="text"  class="form-control" name="s5">
                                     </div>
                                 </div>
                                 
                                  <div class="form-group row">
-                                    <label for="permanent_address" class="col-md-4 col-form-label text-md-right">Engg. Physics Lab</label>
+                                    <label for="permanent_address" class="col-md-4 col-form-label text-md-right">Subject code-06</label>
                                     <div class="col-md-6">
-                                        <input type="text" class="form-control" name="">
+                                        <input type="text" class="form-control" name="s6">
                                     </div>
                                 </div>
                                 
@@ -236,11 +236,11 @@
     <table cellpadding="0" cellspacing="0" border="0">
       <thead>
         <tr>
-         <th>Course Name</th>
-          <th>Branch Name</th>
-          <th>Roll Number</th>
+         <th>Faculty Name</th>
+          <th>Degree Program</th>
+          <th>Reg. Number</th>
           <th>Name</th>
-          <th>Father Name</th>
+          <th>NIC Number</th>
           <th>Gender</th>
         </tr>
       </thead>
@@ -249,16 +249,39 @@
   <div class="tbl-content">
     <table cellpadding="0" cellspacing="0" border="0">
       <tbody>
+      
+      <%@page import="java.sql.*" %>
+      <%@page import="project.ConnectionProvider" %>
+      <%
+      try{
+    	  Connection con=ConnectionProvider.getCon();
+    		Statement st=con.createStatement();
+    		ResultSet rs=st.executeQuery("select * from student");
+    		while(rs.next())
+    		{
+      
+      
+      %>
         <tr>
-          <td>B.Tech</td>
-          <td>CSE</td>
-          <td>10025</td>
-          <td>Gaurav kumar</td>
-          <td>Sunil Kumar</td>
-          <td>Male</td>
+          <td><%=rs.getString(1) %></td>
+          <td><%=rs.getString(2) %></td>
+          <td><%=rs.getString(3) %></td>
+          <td><%=rs.getString(4) %></td>
+          <td><%=rs.getString(5) %></td>
+          <td><%=rs.getString(6) %></td>
+          
         </tr>
 
       </tbody>
+      
+      <% }}
+      catch(Exception e){
+    	  
+    	  
+    	  
+      }
+      
+      %>
     </table>
   </div>
 </section>
@@ -271,14 +294,14 @@
     <table cellpadding="0" cellspacing="0" border="0">
       <thead>
         <tr>
-          <th>Roll Number</th>
-          <th>Engg. Physics-I</th>
-          <th>Engg. Chemistry</th>
-          <th>Engg. Mathematics-I</th>
-          <th>Basic Electrical Engg</th>
-          <th>Electronic Engg.</th>
-          <th>Engg. Chemistry Lab</th>
-          <th>Engg. Physics Lab</th>
+          <th>Index Number</th>
+          <th>Semester</th>
+          <th>Subject code-01</th>
+          <th>Subject code-02</th>
+          <th>Subject code-03</th>
+          <th>Subject code-04</th>
+          <th>Subject code-05</th>
+          <th>Subject code-06</th>
         </tr>
       </thead>
     </table>
@@ -286,16 +309,38 @@
   <div class="tbl-content">
     <table cellpadding="0" cellspacing="0" border="0">
       <tbody>
+         <%
+      try{
+    	  Connection con=ConnectionProvider.getCon();
+    		Statement st=con.createStatement();
+    		ResultSet rs=st.executeQuery("select * from result");
+    		while(rs.next())
+    		{
+      
+      
+      %>
+      
+      
+      
         <tr>
-          <td>10025</td>
-          <td>70</td>
-          <td>80</td>
-          <td>90</td>
-          <td>50</td>
-          <td>56</td>
-          <td>25</td>
-          <td>25</td>
+        
+          <td><%=rs.getString(1) %></td>
+          <td><%=rs.getString(2) %></td>
+          <td><%=rs.getString(3) %></td>
+          <td><%=rs.getString(4) %></td>
+          <td><%=rs.getString(5) %></td>
+          <td><%=rs.getString(6) %></td>
+          <td><%=rs.getString(7) %></td>
+          <td><%=rs.getString(8) %></td>
+          
         </tr>
+        
+        <% }}
+      catch(Exception e){
+    	  
+      }
+      
+      %>
       </tbody>
     </table>
   </div>
@@ -303,10 +348,9 @@
 
 </div>
     <hr class="new1">
-  <center><h5>Note: Any errors occur then contact BTech Days.
-Designed & Developed by BTech Days Team</h5></center>
+  <center><h5>Note: This is a Demo project for our university.</h5></center>
   <hr class="new1">
-<center><h5>All Right Reserved @ BTech Days :: 2015-2020</h5></center> 
+<center><h5>All Right Reserved @ <a href="https://www.linkedin.com/in/sajith-dilshan/">sajith dilshan</a></h5></center> 
   <hr class="new1">
 <br>
 </body>
