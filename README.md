@@ -16,6 +16,9 @@
   <hr>
   
   <h2>Licence info</h2
+    <br>
     
-    <h3>you can use this code for educational purposes</h3>
+    you can use this code for educational purposes.
+    
+    
     
