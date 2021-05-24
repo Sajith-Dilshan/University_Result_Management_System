@@ -17,3 +17,5 @@
   
   <h2>Licence info</h2
     
+    <h3>you can use this code for educational purposes</h3>
+    
