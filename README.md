@@ -18,7 +18,7 @@
   
   <hr>
   
-  <h2>Licence info</h2
+  <h2>Licence info</h2>
     <br>
     
     you can use this code for educational purposes.
